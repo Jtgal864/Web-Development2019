@@ -1,0 +1,134 @@
+What is CSS
+CSS stands for Cascading Style Sheets.
+
+- Cascading refers to the way CSS applies one style on top of another.
+- Style Sheets control the look and feel of web documents.
+
+CSS and HTML work hand in hand:
+- HTML sorts out the page structure.
+- CSS defines how HTML elements are displayed.
+
+
+Why Use CSS?
+CSS allows you to apply specific styles to specific HTML elements.
+
+The main benefit of CSS is that it allows you to separate style from content.
+
+Using just HTML, all the styles and formatting are in the same place, which becomes rather difficult to maintain as the page grows.
+
+
+Inline CSS
+Using an inline style is one of the ways to insert a style sheet. With an inline style, a unique style is applied to a single element.
+
+In order to use an inline style, add the style attribute to the relevant tag.
+
+
+Embedded/Internal CSS
+Internal styles are defined within the <style> element, inside the head section of an HTML page.
+
+
+External CSS
+With this method, all styling rules are contained in a single text file, which is saved with the .css extension.
+
+This CSS file is then referenced in the HTML using the <link> tag. The <link> element goes inside the head section.
+
+
+
+CSS Syntax
+CSS is composed of style rules that the browser interprets and then applies to the corresponding elements in your document.
+A style rule has three parts: selector, property, and value.
+
+
+
+Type Selectors
+The most common and easy to understand selectors are type selectors. This selector targets element types on the page.
+
+
+
+id and class Selectors
+id selectors allow you to style an HTML element that has an id attribute, regardless of their position in the document tree. Here is an example of an id selector:
+
+The HTML:
+<div id="intro">
+   <p> This paragraph is in the intro section.</p>
+</div>
+<p> This paragraph is not in the intro section.</p>
+
+The CSS:
+#intro {
+   color: white;
+   background-color: gray;
+}
+
+
+
+Descendant Selectors
+These selectors are used to select elements that are descendants of another element. When selecting levels, you can select as many levels deep as you need to.
+
+For example, to target only <em> elements in the first paragraph of the "intro" section:
+
+The HTML:
+<div id="intro">
+   <p class="first">This is a <em> paragraph.</em></p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section.</p>
+<p> The second paragraph is not in the intro section. </p>
+
+The CSS:
+#intro .first em {
+   color: pink; 
+   background-color:gray;
+}
+
+
+
+Comments
+Comments are used to explain your code, and may help you when you edit the source code later. Comments are ignored by browsers.
+
+A CSS comment look like this:
+/* Comment goes here */
+
+Example:
+p { 
+  color: green; 
+  /* This is a comment */
+  font-size: 150%;
+}
+
+
+
+Cascade
+The final appearance of a web page is a result of different styling rules.
+
+The three main sources of style information that form a cascade are:
+
+- The stylesheet created by the author of the page
+- The browser's default styles
+- Styles specified by the user
+
+
+
+Inheritance
+Inheritance refers to the way properties flow through the page. A child element will usually take on the characteristics of the parent element unless otherwise defined.
+
+For example:
+<html>
+   <head>
+      <style>
+      body {
+         color: green;
+         font-family: Arial;
+      }
+     </style>
+   </head>
+   <body>       
+      <p>
+      This is a text inside the paragraph. 
+      </p>
+   </body>
+</html>
+
+
+
+
