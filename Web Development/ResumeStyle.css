@@ -1,0 +1,67 @@
+html {
+	padding:10px;
+	border:20px;
+	margin:20px;
+            }
+body{
+background-size: 100%;
+background-image: url(https://image.shutterstock.com/image-photo/pink-bright-texture-designer-background-260nw-1040229760.jpg);
+font-family: "Times New Roman", Arial;
+}
+
+#hd{
+background-color:#E6E6FA;
+width: 100%;
+height: 150px;
+
+}
+
+
+#lnav{
+background-color: white;
+width: 250px;
+height: 500px;
+float: left;
+}
+
+.lnav a{
+text-decoration: none;
+}
+
+.lnav a:hover{
+  color: #f1f1f1;
+}
+
+
+#main{
+font-size: 14pt; 
+width: 595px;
+height: 500px;
+float:left;
+overflow: scroll;
+}
+
+#rnav{
+background-color: white;
+width: 250px;
+height: 500px;
+float: right;
+}
+
+.rnav a{
+text-decoration: none;
+}
+
+.rnav a:hover{
+  color: #f1f1f1;
+}
+#ft{
+/* background-color: #E6E6FA; */
+width: 100%;
+height: 50px;
+margin-top: 5px;
+align: center;
+}
+.hList ul{
+display: inline;
+}
